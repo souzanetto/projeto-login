@@ -27,7 +27,7 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color:aliceblue;
-    max-width: 230px;
+    max-width: 250px;
     border-radius: 20px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.521);
     padding-bottom: 5px;
@@ -39,10 +39,15 @@ main p{
     padding-bottom: 10px;
 }
 
+section{
+margin-left: 12px;
+}
+
 img{
     display: block;
     margin: auto;
-    max-width: 230px;
+    margin-left: -12px;
+    max-width: 250px;
     border-radius: 20px 20px 0 0;
 }
 
