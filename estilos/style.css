@@ -23,19 +23,27 @@ body{
 }
 
 main{
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    width: 250px;
-    height: 500px;
-    border-radius: 20px;
-    overflow: hidden;
+ position: relative;
+ width: 100vw;
+ height: 100vh;
 }
 
-#foto{
+section#login{
+display: block;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: white;
+width: 250px;
+height: 500px;
+border-radius: 20px;
+overflow: hidden;
+transition: width 0.3s, height 0.3s;
+transition-timing-function: ease;
+}
+
+section#login div#foto{
     display: block;
     background: var(--cor1) url(../imagens/engrenagens.jpg);
     background-size: cover;
@@ -43,7 +51,7 @@ main{
     height: 200px;
 }
 
-#formulario{
+section#login div#formulario{
     display: block;
     padding: 10px;
 }
