@@ -41,12 +41,12 @@ display: block;
 position: absolute;
 top: 50%;
 left: 50%;
-transform: translate(-50%, -50%);
 background-color: white;
 width: 250px;
-height: 515px;
+height: 525px;
 border-radius: 20px;
 overflow: hidden;
+transform: translate(-50%, -50%);
 transition: width 0.2s, height 0.2s;
 transition-timing-function: ease;
 }
@@ -73,6 +73,10 @@ div.campo{
 
 }
 
+div.campo input:focus-within{
+    background-color: white;
+}
+
 div.campo > span{
 color: white;
 font-size: 2em;
@@ -90,11 +94,11 @@ div.campo input{
     background-color: #7bd1ce;
     width: calc(100%-40px);
     height: 85%;
-    width: calc(100% - 72px);
+    width: calc(100% - 70px);
     border: none;
     border-radius: 8px;
     padding-right: 18px;
-    transform: translateY(-17px);
+    transform: translateY(-16px);
 }
 
 form > input[type=submit]{
@@ -105,7 +109,7 @@ form > input[type=submit]{
     height: 40px;
     background-color: var(--cor2);
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     color: white;
     cursor: pointer;
 }
