@@ -11,7 +11,7 @@
     'FILL' 1,
     'wght' 400,
     'GRAD' 0,
-    'opsz' 48
+    'opsz' 48;
   }
 
 *{
@@ -44,7 +44,7 @@ left: 50%;
 transform: translate(-50%, -50%);
 background-color: white;
 width: 250px;
-height: 500px;
+height: 515px;
 border-radius: 20px;
 overflow: hidden;
 transition: width 0.2s, height 0.2s;
@@ -62,4 +62,78 @@ section#login div#foto{
 section#login div#formulario{
     display: block;
     padding: 10px;
+}
+
+div.campo{
+    background-color: var(--cor1);
+    height: 40px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 8px;
+
+}
+
+div.campo > span{
+color: white;
+font-size: 2em;
+height: 100%;
+width: 25px;
+transform: translateY(-7px);
+padding: 10px;
+}
+
+div.campo label{
+    display: none;
+}
+
+div.campo input{
+    background-color: #7bd1ce;
+    width: calc(100%-40px);
+    height: 85%;
+    width: calc(100% - 72px);
+    border: none;
+    border-radius: 8px;
+    padding-right: 18px;
+    transform: translateY(-17px);
+}
+
+form > input[type=submit]{
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 1em;
+    height: 40px;
+    background-color: var(--cor2);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover{
+    background-color: #2e615f;
+}
+
+form > a.botao{
+    display: block;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 6px;
+    text-decoration: none;
+    color: #2e615f;
+    background-color: white;
+    border: 1px solid #49a09d;
+    height: 31px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+
+form > a.botao > span{
+    font-size: 0.8em;
+}
+
+form > a.botao:hover{
+    background-color: #2e615f;
+    color: white;
 }
